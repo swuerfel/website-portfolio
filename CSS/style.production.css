@@ -10,18 +10,31 @@
 
 */
 
+/*
+Colors used
+
+Text Color (Black): #000;
+Primary Color (Dark Moderate Cyan): #357b70;
+Secondary Color (Soft Orange): #e0b354;
+*/
+
+/* Declarations for color variables */
+
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color:#000;
+  color: #000;
   font-weight: 400;
   font-size: 17px;
+
   /* Sets the font size to 16px */
+
   line-height: 1.6;
+
   /* Sets the line-height to 1.6 */
 }
 
@@ -72,7 +85,8 @@ a:visited {
   color: #05676e;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
 }
@@ -85,22 +99,26 @@ a:active {
 button {
   /* overwrites browser defaults and resets the border */
   border: none;
+
   /* takes the font from the outer container */
   font-family: inherit;
   font-size: inherit;
+
   /* styles the button */
   background-color: #357b70;
   color: #fff;
   text-decoration: none;
-  /*adds spacing to the button; this will be discussed more in-depth later */
+
+  /* adds spacing to the button; this will be discussed more in-depth later */
   padding: 10px;
   margin: 10px;
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
@@ -109,30 +127,38 @@ button {
 .button {
   /* overwrites browser defaults and resets the border */
   border: none;
+
   /* takes the font from the outer container */
   font-family: inherit;
   font-size: inherit;
+
   /* styles the button */
   background-color: #357b70;
   color: #fff;
   text-decoration: none;
-  /*adds spacing to the button; this will be discussed more in-depth later */
+
+  /* adds spacing to the button; this will be discussed more in-depth later */
   padding: 10px;
   margin: 10px;
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
@@ -142,19 +168,22 @@ a.button {
 }
 
 /* Form */
-input[type="text"], input[type="email"], input[type="tel"], textarea {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
   display: block;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 textarea {
-  margin-bottom:10px;
+  margin-bottom: 10px;
   max-width: 100%;
 }
 
 /* Table */
 table {
-  overflow-x:auto;
+  overflow-x: auto;
   margin: 50px auto;
 }
 
@@ -220,14 +249,14 @@ td {
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header :last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -240,13 +269,13 @@ td {
   margin-left: 15px;
 }
 
-/* Grid fallback*/
+/* Grid fallback */
 .grid__item {
   display: inline-block;
   width: 33%;
 }
 
-/* Styling CSS grid*/
+/* Styling CSS grid */
 .grid {
   display: -ms-grid;
   display: grid;
@@ -258,7 +287,8 @@ td {
 .grid__item {
   background-color: #d3d3d3;
   padding: 10px;
-  /* Set width to auto*/
+
+  /* Set width to auto */
   width: auto;
 }
 
@@ -275,11 +305,11 @@ td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .footer-centered {
@@ -296,10 +326,12 @@ td {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 24px;
   }
@@ -311,12 +343,13 @@ td {
   /* from {width: 300px;}
   to {width: 290px;} */
   from {
-    -webkit-transform: translate(-20px, 0px);
-            transform: translate(-20px, 0px);
+    -webkit-transform: translate(-20px, 0);
+    transform: translate(-20px, 0);
   }
+
   to {
-    -webkit-transform: translate(20px, 0px);
-            transform: translate(20px, 0px);
+    -webkit-transform: translate(20px, 0);
+    transform: translate(20px, 0);
   }
 }
 
@@ -324,12 +357,13 @@ td {
   /* from {width: 300px;}
   to {width: 290px;} */
   from {
-    -webkit-transform: translate(-20px, 0px);
-            transform: translate(-20px, 0px);
+    -webkit-transform: translate(-20px, 0);
+    transform: translate(-20px, 0);
   }
+
   to {
-    -webkit-transform: translate(20px, 0px);
-            transform: translate(20px, 0px);
+    -webkit-transform: translate(20px, 0);
+    transform: translate(20px, 0);
   }
 }
 
@@ -337,25 +371,26 @@ td {
   width: 300px;
   margin: 50px auto;
   -webkit-animation-duration: 8s;
-          animation-duration: 8s;
+  animation-duration: 8s;
   -webkit-animation-name: svg-size;
-          animation-name: svg-size;
+  animation-name: svg-size;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes color-change {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -365,9 +400,11 @@ td {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -375,66 +412,88 @@ td {
 
 .sun {
   -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  animation-duration: 4s;
   -webkit-animation-name: color-change;
-          animation-name: color-change;
+  animation-name: color-change;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 /* The animation code */
 @-webkit-keyframes image-round {
-  from {border-radius: 50%;}
-  to {border-radius: 0%;}
+  from {
+    border-radius: 50%;
+  }
+
+  to {
+    border-radius: 0%;
+  }
 }
+
 @keyframes image-round {
-  from {border-radius: 50%;}
-  to {border-radius: 0%;}
+  from {
+    border-radius: 50%;
+  }
+
+  to {
+    border-radius: 0%;
+  }
 }
 
 /* The element to apply the animation to */
 .profile__portrait--round {
   border-radius: 50%;
   -webkit-animation-name: image-round;
-          animation-name: image-round;
+  animation-name: image-round;
   -webkit-animation-duration: 8s;
-          animation-duration: 8s;
+  animation-duration: 8s;
   -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-timing-function: ease;
   animation-direction: alternate-reverse;
 }
 
 /* List animation */
 @-webkit-keyframes list-scale {
-  from {color: inherit;
-  -webkit-transform: scale(1.0);
-          transform: scale(1.0);}
-  to {color: #357b70;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);}
+  from {
+    color: inherit;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  to {
+    color: #357b70;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
+
 @keyframes list-scale {
-  from {color: inherit;
-  -webkit-transform: scale(1.0);
-          transform: scale(1.0);}
-  to {color: #357b70;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);}
+  from {
+    color: inherit;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  to {
+    color: #357b70;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
 
 .list-hover:hover {
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-name: list-scale;
-          animation-name: list-scale;
+  animation-name: list-scale;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }

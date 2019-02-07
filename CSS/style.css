@@ -26,11 +26,14 @@ Secondary Color (Soft Orange): #e0b354;
 
 body {
   font-family: 'Roboto', sans-serif;
-  color:var(--text-color);
+  color: var(--text-color);
   font-weight: 400;
   font-size: var(--main-font-size);
+
   /* Sets the font size to 16px */
+
   line-height: 1.6;
+
   /* Sets the line-height to 1.6 */
 }
 
@@ -53,7 +56,9 @@ h3 {
   font-weight: var(--heading-font-weight);
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-size: var(--main-font-size);
   font-weight: var(--heading-font-weight);
   text-decoration: underline;
@@ -69,7 +74,8 @@ a:visited {
   color: var(--primary-color--visited);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
 }
@@ -79,29 +85,38 @@ a:active {
   color: var(--primary-color--active);
 }
 
-button, .button {
+button,
+.button {
   /* overwrites browser defaults and resets the border */
   border: none;
+
   /* takes the font from the outer container */
   font-family: inherit;
   font-size: inherit;
+
   /* styles the button */
   background-color: var(--primary-color);
   color: var(--text-color-lighter);
   text-decoration: none;
-  /*adds spacing to the button; this will be discussed more in-depth later */
+
+  /* adds spacing to the button; this will be discussed more in-depth later */
   padding: 10px;
   margin: 10px;
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition-duration: 0.2s;
   transition-property: opacity;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
@@ -111,19 +126,22 @@ a.button {
 }
 
 /* Form */
-input[type="text"], input[type="email"], input[type="tel"], textarea {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
   display: block;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 textarea {
-  margin-bottom:10px;
+  margin-bottom: 10px;
   max-width: 100%;
 }
 
 /* Table */
 table {
-  overflow-x:auto;
+  overflow-x: auto;
   margin: 50px auto;
 }
 
@@ -203,13 +221,13 @@ td {
   margin-left: 15px;
 }
 
-/* Grid fallback*/
+/* Grid fallback */
 .grid__item {
   display: inline-block;
   width: 33%;
 }
 
-/* Styling CSS grid*/
+/* Styling CSS grid */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -219,7 +237,8 @@ td {
 .grid__item {
   background-color: var(--box-background-color);
   padding: 10px;
-  /* Set width to auto*/
+
+  /* Set width to auto */
   width: auto;
 }
 
@@ -247,10 +266,12 @@ td {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 24px;
   }
@@ -262,10 +283,11 @@ td {
   /* from {width: 300px;}
   to {width: 290px;} */
   from {
-    transform: translate(-20px, 0px);
+    transform: translate(-20px, 0);
   }
+
   to {
-    transform: translate(20px, 0px);
+    transform: translate(20px, 0);
   }
 }
 
@@ -277,16 +299,17 @@ td {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
-
 }
 
 @keyframes color-change {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -302,8 +325,13 @@ td {
 
 /* The animation code */
 @keyframes image-round {
-  from {border-radius: 50%;}
-  to {border-radius: 0%;}
+  from {
+    border-radius: 50%;
+  }
+
+  to {
+    border-radius: 0%;
+  }
 }
 
 /* The element to apply the animation to */
@@ -317,10 +345,15 @@ td {
 
 /* List animation */
 @keyframes list-scale {
-  from {color: inherit;
-  transform: scale(1.0);}
-  to {color: #357b70;
-  transform: scale(1.1);}
+  from {
+    color: inherit;
+    transform: scale(1);
+  }
+
+  to {
+    color: #357b70;
+    transform: scale(1.1);
+  }
 }
 
 .list-hover:hover {

@@ -43,6 +43,7 @@ header {
 
 header img {
   max-height: 80px;
+  max-width: 200px;
 }
 
 h1 {
@@ -105,7 +106,6 @@ button,
 
   /* adds spacing to the button; this will be discussed more in-depth later */
   padding: 10px;
-  margin: 10px;
   border-radius: 3px;
 
   /* width of the border, type, color */
@@ -267,7 +267,26 @@ td {
 }
 
 /* Responsive Design */
+
 @media all and (max-width: 500px) {
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-header__item {
+    flex: auto;
+  }
+
+  .page-header :last-child {
+    text-align: center;
+    padding: 0;
+  }
+
+  .navigation-list li {
+    margin: 0 10px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 10px;

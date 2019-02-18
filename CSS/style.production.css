@@ -177,8 +177,7 @@ input[type="tel"],
 textarea {
   display: block;
   margin-bottom: 10px;
-  border-color: #2b2b2b;
-  border-width: 1px;
+  border: 1px solid #2b2b2b;
 }
 
 textarea {
